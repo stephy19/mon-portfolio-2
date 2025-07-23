@@ -1,0 +1,1240 @@
+
+ {% extends 'base.html' %}
+ {% load static %}
+ {% block title %} Accueil {% endblock title %}
+
+
+ {% block content %}
+ 
+ <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <!-- Uncomment the line below if you also wish to use an text logo -->
+        <!-- <h1 class="sitename">Style</h1>  -->
+      </a>
+
+      <nav Style="background-color :  #4a235a ;"  id="navmenu" class="navmenu align-items-center justify-content-center ">
+
+        <div class="profile-img">
+          <img src="{% static 'assets/img/steph1.jpg' %}" alt="" class="img-fluid rounded-circle">
+        </div>
+
+        <a href="index.html" class="logo d-flex align-items-center justify-content-center active">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.webp" alt=""> -->
+          <h1 class="sitename">STEPHANE IRIE</h1>
+        </a>
+
+       
+
+        <ul class=" ">
+          <li><a href="#hero">Accueil</a></li>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#resume">Resumé</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <!-- <li><a href="#services">Services</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container">
+        <div class="row g-0 align-items-center">
+
+          <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-delay="100">
+            <div class="content-wrapper">
+              <h1 class="hero-title fw-bolder " Style="color :  #4a235a ;">Je m'appelle STEPHANE IRIE je suis <span Style="color :   #870a43  ;" class="typed" data-typed-items=" Developpeur full stack ,Designer, Freelancer"></span></h1>
+              <p class="lead">Développeur Full stack passionné, je construis des solutions robustes, innovantes et élégantes, du backend à l’UI/UX, avec un fort intérêt pour l’apprentissage continu et le partage.</p>
+
+              <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-item" >
+                  <span class="purecounter" Style="color :  #4a235a ;" data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="2">0</span>
+                  <span class="stat-label">Projets réalisés</span>
+                </div>
+                <div class="stat-item">
+                  <span class="purecounter" Style="color :  #4a235a ;" data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="2">0</span>
+                  <span class="stat-label">Année D'experience</span>
+                </div>
+                <div class="stat-item">
+                  <span class="purecounter" Style="color :  #4a235a ;" data-purecounter-start="0" data-purecounter-end="28" data-purecounter-duration="2">0</span>
+                  <span class="stat-label"> Clients satisfaits </span>
+                </div>
+              </div>
+
+              <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+                <style>
+                  #contactez{
+                    outline: 1px solid #4a235a;
+                    color: #4a235a;
+                    transition: 0.5s;
+                  }
+                  #contactez:hover{
+                    background-color: #4a235a;
+                    color: aliceblue;
+                    transition: 0.5s;
+                  }
+                  #contactez:active{
+                    background-color: #8d7a94;
+                    color: aliceblue;
+                    transition: 0.5s;
+                  }
+                  
+                </style>
+                <a id="voir" href="#portfolio" Style="background-color :  #870a43 ; "  class="btn text-light">voir mon travail</a>
+                <a id="contactez" href="#contact"  Style="" class="btn"> contactez moi</a>
+              </div>
+
+              <div class="social-links"  data-aos="fade-up" data-aos-delay="400">
+                {% comment %} <a href="#"><i class="bi bi-twitter"></i></a> {% endcomment %}
+                <a href="https://www.linkedin.com/in/vangny-st%C3%A9phane-irie-112637333/"  Style="background-color :  #4a235a ;"><i class="bi bi-linkedin text-light"></i></a>
+                <a href="https://github.com/stephy19"  Style="background-color :  #4a235a ;"><i class="bi bi-github text-light"></i></a>
+                <a href="https://wa.me/+2250759444715/"  Style="background-color :  #4a235a ;"><i class="bi bi-whatsapp text-light"></i></a>
+                {% comment %} <a href="#"><i class="bi bi-instagram"></i></a> {% endcomment %}
+              </div>
+            </div>
+          </div>
+
+          <div style=" box-shadow: -1px 1px 95px #e0acc4; border: 3px #e0227b ;"  class="col-lg-6 hero-image rounded-5 border-4" data-aos="fade-left" data-aos-delay="200">
+            <div  class="image-container">
+              <div class="floating-elements">
+                <div class="floating-card card-1" style="border: 2px solid #4a235a;"  data-aos="zoom-in" data-aos-delay="300">
+                  <i Style="color :  #4a235a ;"  class="bi bi-palette"></i>
+                  <span>UI/UX Design</span>
+                </div>
+                <div class="floating-card card-2" style="border: 2px solid #4a235a;"  data-aos="zoom-in" data-aos-delay="400">
+                  <i Style="color :  #4a235a ;"  class="bi bi-code-slash"></i>
+                  <span>Developpement web et mobile</span>
+                </div>
+                <div class="floating-card card-3" style="border: 2px solid #4a235a;"  data-aos="zoom-in" data-aos-delay="500">
+                  <i Style="color :  #4a235a ;"  class="bi bi-lightning"></i>
+                  <span>Conception d'idées</span>
+                </div>
+              </div>
+              
+              <img src="{% static 'assets/img/profile/steph1.jpg' %}" alt="Portfolio Hero" class="img-fluid" >
+              {% comment %} <div Style="background-color : #4a235a;" class="image-overlay"></div> {% endcomment %}
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2 Style="color :  #4a235a ;" >A propos</h2>
+        <p>à propos de moi</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+
+          <div  class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="profile-image-wrapper">
+              <div style="border: 1px solid #4a235a; box-shadow: 1px 1px 59px #e097b8;" class="profile-image">
+                <img src="{% static 'assets/img/profile/logo.jpg' %}" alt="Profile" class="img-fluid">
+              </div>
+              <!-- <div class="signature-section">
+                <img src="{% static 'assets/img/misc/signature-1.webp' %}" alt="Signature" class="signature">
+                <p class="quote">Building meaningful digital experiences through creative code.</p>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <div class="intro">
+                <h2 Style="color :  #870a43 ;" >Salut, je suis STEPHANE - Un développeur créatif </h2>
+                <p>Ma mission ? Transformer des idées en applications fonctionnelles et visuellement attractives. Que ce soit pour des sites dynamiques, des applications interactives ou des interfaces épurées, je m'efforce de marier la créativité et la performance pour offrir des produits de qualité.
+                Toujours curieux et en quête de nouveaux défis, j’aime expérimenter avec les dernières tendances du développement, tout en maintenant une approche pragmatique et orientée vers les résultats.</p>
+              </div>
+
+              <div  class="skills-grid">
+                <div style="background-color: #ffeef6; border: 1px solid #4a235a;"  class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                  <div Style="background-color :  #4a235a ;" class="skill-icon">
+                    <i  class="bi bi-palette"></i>
+                  </div>
+                  <h4 Style="color :  #4a235a ;" >UI/UX Designer</h4>
+                  <p>conception de maquette et charte graphique</p>
+                </div>
+                <div style="background-color: #ffeef6; border: 1px solid #4a235a;"  class="skill-item" data-aos="zoom-in" data-aos-delay="450">
+                  <div  Style="background-color :  #4a235a ;"  class="skill-icon">
+                    <i class="bi bi-code-slash"></i>
+                  </div>
+                  <h4 Style="color :  #4a235a ;" > Developpeur Full stack</h4>
+                  <p>Frontend , Backend , Base de donnée , Devops etc..</p>
+                </div>
+                <div style="background-color: #ffeef6; border: 1px solid #4a235a;" class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+                  <div Style="background-color :  #4a235a ;"  class="skill-icon">
+                    <i class="bi bi-camera"></i>
+                  </div>
+                  <h4 Style="color :  #4a235a ;" >Photographie</h4>
+                  <p>Exellent Photographe</p>
+                </div>
+              </div>
+
+              <div  class="journey-timeline" data-aos="fade-up" data-aos-delay="300">
+                <div style="border-left: 1px solid #870a43;"  class="timeline-item">
+                  <div style="color: #4a235a;" class="year">2024</div>
+                  <div  class="description">Diplômé d'un BREVET DE TECHNICIEN en DEVELOPPEMENT DE LOGICIEL numérique au GROUPE ICK de bouaké.</div>
+                </div>
+                <!-- <div class="timeline-item">
+                  <div class="year">2020</div>
+                  <div class="description">Joined InnovateTech as Junior Frontend Developer</div>
+                </div> -->
+                <div style="border-left: 1px solid #870a43;"  class="timeline-item">
+                  <div style="color: #4a235a;"  class="year">2025</div>
+                  <div class="description">Lancement d'une carrière indépendante spécialisée dans les solutions Web créatives</div>
+                </div>
+              </div>
+
+              <div class="cta-section" data-aos="fade-up" data-aos-delay="400">
+                <div style="background-color: #ffedf5;" class="fun-fact">
+                  <span class="emoji">☕</span>
+                  <span class="text">Concepteur alimenté par le café 😁</span>
+                </div>
+                <!-- <div class="action-buttons">
+                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                  <a href="#" class="btn btn-outline">Download Resume</a>
+                </div> -->
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="skills-grid">
+              <div   class="row g-4">
+                <div  class="col-md-6" data-aos="flip-left" data-aos-delay="200">
+                  <div id="front" style="border: 1px solid #4a235a; padding: 30px; border-radius: 15px;" class="skill-header">
+                    <div style="align-items: center; justify-content: center; display: flex; gap: 15px;" class="skill">
+                      <i style="background-color: #f7e0ea; color: #4a235a; padding-left: 10px;padding-right: 10px; font-size: 30px;  border-radius: 10px;" class="bi bi-code-slash"></i>
+                      <h3 style="color: #870a43; font-size: 20px;" class="">Frontend Development</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <style>
+                          #front:hover {
+                            padding: 59px;
+                            transition: all 0.2s ease-in-out;
+                            box-shadow: 1px 1px 50px #f7c2d9;
+                          }
+                          #front:active{
+                            padding: 10px;
+                            transition: all 0.2s ease-in-out;
+                            box-shadow: 1px 1px 50px #f7c2d9;
+                          }
+                        </style>
+                        <div  class="skill-info">
+                          <span style="color: #4a235a;" class="skill-name ">HTML/CSS | BOOTSTRAP | TAILWIND CSS | DAISY UI | BULMA CSS</span>
+                          <span style="color: #4a235a;" class="skill-percentage">  95%</span>
+                        </div>
+                        <div  class=" progress">
+                          <div  style="background-color: #4a235a;" class="progress-bar " role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span style="color: #4a235a;" class="skill-name">JAVASCRIPTS | AOS | ANIME.js</span>
+                          <span style="color: #4a235a;" class="skill-percentage">  58%</span>
+                        </div>
+                        <div class=" progress">
+                          <div style="background-color: #4a235a;" class="progress-bar" role="progressbar" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span style="color: #4a235a;" class="skill-name">REACT JS | FLUTTER FLOW</span>
+                          <span style="color: #4a235a;" class="skill-percentage">  82%</span>
+                        </div>
+                        <div class=" progress">
+                          <div style="background-color: #4a235a;" class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End Frontend Card -->
+                </div>
+
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="300">
+                  <div id="front" style="border: 1px solid #4a235a; padding: 40px; border-radius: 15px;" class="skill-header">
+                    <div style="align-items: center; justify-content: center; display: flex; gap: 15px;" class="skill">
+                      <i style="background-color: #f7e0ea; color: #4a235a; padding-left: 10px;padding-right: 10px; font-size: 30px;  border-radius: 10px;" class="bi bi-server"></i>
+                      <h3 style="color: #870a43; font-size: 20px;" class="">Backend Development</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <style>
+                          #front:hover {
+                            padding: 59px;
+                            transition: all 0.2s ease-in-out;
+                            box-shadow: 1px 1px 50px #f7c2d9;
+                          }
+                          #front:active{
+                            padding: 10px;
+                            transition: all 0.2s ease-in-out;
+                            box-shadow: 1px 1px 50px #f7c2d9;
+                          }
+                        </style>
+                        <div  class="skill-info">
+                          <span style="color: #4a235a;" class="skill-name ">PYTHON</span>
+                          <span style="color: #4a235a;" class="skill-percentage">  90%</span>
+                        </div>
+                        <div  class=" progress">
+                          <div  style="background-color: #4a235a;" class="progress-bar " role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span style="color: #4a235a;" class="skill-name">DJANGO</span>
+                          <span style="color: #4a235a;" class="skill-percentage">  90%</span>
+                        </div>
+                        <div class=" progress">
+                          <div style="background-color: #4a235a;" class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span style="color: #4a235a;" class="skill-name">POSTGRESQL | FIREBASE</span>
+                          <span style="color: #4a235a;" class="skill-percentage">  82%</span>
+                        </div>
+                        <div class=" progress">
+                          <div style="background-color: #4a235a;" class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End Backend Card -->
+                </div>
+
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="300">
+                  <div id="front" style="border: 1px solid #4a235a; padding: 40px; border-radius: 15px;" class="skill-header">
+                    <div style="align-items: center; justify-content: center; display: flex; gap: 15px;" class="skill">
+                      <i style="background-color: #f7e0ea; color: #4a235a; padding-left: 10px;padding-right: 10px; font-size: 30px;  border-radius: 10px;" class="bi bi-server"></i>
+                      <h3 style="color: #870a43; font-size: 20px;" class="">Design &amp; Tools </h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <style>
+                          #front:hover {
+                            padding: 59px;
+                            transition: all 0.2s ease-in-out;
+                            box-shadow: 1px 1px 50px #f7c2d9;
+                          }
+                          #front:active{
+                            padding: 10px;
+                            transition: all 0.2s ease-in-out;
+                            box-shadow: 1px 1px 50px #f7c2d9;
+                          }
+                        </style>
+                        <div  class="skill-info">
+                          <span style="color: #4a235a;" class="skill-name ">FIGMA</span>
+                          <span style="color: #4a235a;" class="skill-percentage">  80%</span>
+                        </div>
+                        <div  class=" progress">
+                          <div  style="background-color: #4a235a;" class="progress-bar " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span style="color: #4a235a;" class="skill-name">CANVA | PHOTOSHOP </span>
+                          <span style="color: #4a235a;" class="skill-percentage">  90%</span>
+                        </div>
+                        <div class=" progress">
+                          <div style="background-color: #4a235a;" class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span style="color: #4a235a;" class="skill-name">PICSART | WEBFLOW</span>
+                          <span style="color: #4a235a;" class="skill-percentage">  82%</span>
+                        </div>
+                        <div class=" progress">
+                          <div style="background-color: #4a235a;" class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End Design & tools Card -->
+                </div>
+
+                 <div class="col-md-6" data-aos="flip-left" data-aos-delay="300">
+                  <div id="front" style="border: 1px solid #4a235a; padding: 34px; border-radius: 15px;" class="skill-header">
+                    <div style="align-items: center; justify-content: center; display: flex; gap: 15px;" class="skill">
+                      <i style="background-color: #f7e0ea; color: #4a235a; padding-left: 10px;padding-right: 10px; font-size: 30px;  border-radius: 10px;" class="bi bi-cloud"></i>
+                      <h3 style="color: #870a43; font-size: 20px;" class="">Clouds &amp; Devops </h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <style>
+                          #front:hover {
+                            padding: 59px;
+                            transition: all 0.2s ease-in-out;
+                            box-shadow: 1px 1px 50px #f7c2d9;
+                          }
+                          #front:active{
+                            padding: 10px;
+                            transition: all 0.2s ease-in-out;
+                            box-shadow: 1px 1px 50px #f7c2d9;
+                          }
+                        </style>
+                        <div  class="skill-info">
+                          <span style="color: #4a235a;" class="skill-name ">AWS | RAILWAY | RENDER | VERCEL  </span>
+                          <span style="color: #4a235a;" class="skill-percentage">  80%</span>
+                        </div>
+                        <div  class=" progress">
+                          <div  style="background-color: #4a235a;" class="progress-bar " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span style="color: #4a235a;" class="skill-name"> DOCKER </span>
+                          <span style="color: #4a235a;" class="skill-percentage">  60%</span>
+                        </div>
+                        <div class=" progress">
+                          <div style="background-color: #4a235a;" class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span style="color: #4a235a;" class="skill-name"> GIT | GITHUB </span>
+                          <span style="color: #4a235a;" class="skill-percentage">  82%</span>
+                        </div>
+                        <div class=" progress">
+                          <div style="background-color: #4a235a;" class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End Design & tools Card -->
+                </div>
+              </div>
+            </div><!-- End Skills Grid -->
+          </div>
+
+          <div class="col-lg-4">
+            <div class="skills-summary" data-aos="fade-left" data-aos-delay="200">
+              <style>
+                #Expertise {
+                  color: #4a235a;
+                }
+                #Expertise:hover {
+                  color: #870a43;
+                }
+                .stat {
+                  background-color: #4a235a;
+                  padding: 15px;
+                  border-radius: 100%;
+                  color: white;
+                }
+                .stat:hover {
+                  background-color: #870a43;
+                  color: #ffffff;
+                  transition: 0.5s;
+                }
+                .number{
+                  color: #4a235a;
+                  font-size: 20px;
+                  font-weight: bolder;
+                  padding: 2px;
+                }
+              </style>
+              <h3 id="Expertise">Expertise professionnel – Stéphane Irie</h3>
+              <p> 
+              Développeur Fullstack passionné et polyvalent, je conçois et développe des applications web performantes en alliant expertise front-end et back-end. Fort d’une solide maîtrise des technologies modernes (JavaScript, TypeScript, React, Node.js, etc.), je m’implique dans toutes les phases du développement logiciel : de l’analyse des besoins à la mise en production. Curieux, rigoureux et orienté solutions, je m’attache à livrer un code propre, maintenable et adapté aux enjeux métiers.</p>
+
+              <div class="summary-stats">
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="stat">
+                    <i class="bi bi-trophy"></i>
+                  </div>
+                  <div class="stat-info">
+                    <span class="number">1+</span>
+                    <span class="stat-label">Années D'expérience</span>
+                  </div>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="stat">
+                    <i class="bi bi-diagram-3"></i>
+                  </div>
+                  <div class="stat-info">
+                    <span class="number">20+</span>
+                    <span class="stat-label">Projets Reéalisés</span>
+                  </div>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="500">
+                  <div class="stat">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <div class="stat-info">
+                    <span class="number">20+</span>
+                    <span class="stat-label"> Clients Satisfaits </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="skills-badges" data-aos="fade-up" data-aos-delay="600">
+                <h4>Certifications</h4>
+                <div class="badge-list">
+                  <div class="skill-badge">AWS Certified</div>
+                  <div class="skill-badge">Laravel Expert</div>
+                  <div class="skill-badge">Vue.js Developer</div>
+                  <div class="skill-badge">UI/UX Design</div>
+                </div>
+              </div> -->
+            </div><!-- End Skills Summary -->
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+        <style>
+          #resume-item {
+            color: #4a235a;
+          }
+          h2 {
+            color: #4a235a;
+          }
+          #icone {
+            color: #4a235a;
+            font-size: 40px;
+          }
+          .experience-cards{
+            border-left: #4a235a 2px solid;
+          }
+          #duration{
+            background-color: #f6eafc;
+            color: #4a235a;
+            padding: 5px;
+            border-radius: 50px;
+            opacity: 500px;
+            margin: 10px;
+          }
+          h3 ,h4{
+            color: #870a43;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+          }
+          #li{
+            font-weight: bolder;
+            color: #4a235a;
+            padding: 2px;
+            list-style: circle ;
+          }
+          
+        </style>
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2 id="resume-item">Resumé</h2>
+        <p>Parcours academique et professionnel</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="experience-section">
+              <div class="section-header">
+                <h2><i id="icone" class="bi bi-briefcase"></i>Parcours professionnel</h2>
+                <p class="section-subtitle"></p>
+              </div>
+
+              <div class="experience">
+                <div class="experience-card" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="card-header">
+                    <div class="role-info">
+                      <h3>Agent Informaticien Developpeur</h3>
+                      <h4>CENTRE HOSPITALIER DE BOUAKE</h4>
+                    </div>
+                    <span id="duration">2025 - Present</span>
+                  </div>
+                  <div class="card-body">
+                    <p>Réalisations</p>
+                    <ul class="achievements">
+                      <li  id="li">Mise en place d'une plateforme de communication digital pour le CHR avec Blog intégré</li>
+                      <p><a class="link-success fw-bolder" href="https://chrbouake.kesug.com/index.php">Consulter</a></p>
+                      <li id="li">Maintenance des logiciels du CHR</li>
+                      <li id="li">Formation du personnel administratif et médical </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- <div class="experience-card" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="card-header">
+                    <div class="role-info">
+                      <h3>Senior Development Manager</h3>
+                      <h4>Consectetur Solutions Inc</h4>
+                    </div>
+                    <span class="duration">2018 - 2022</span>
+                  </div>
+                  <div class="card-body">
+                    <p>Donec quam felis ultricies nec pellentesque eu pretium quis sem nulla consequat massa quis enim donec pede justo fringilla vel.</p>
+                  </div>
+                </div>
+
+                <div class="experience-card" data-aos="zoom-in" data-aos-delay="500">
+                  <div class="card-header">
+                    <div class="role-info">
+                      <h3>Product Development Specialist</h3>
+                      <h4>Adipiscing Technologies</h4>
+                    </div>
+                    <span class="duration">2015 - 2018</span>
+                  </div>
+                  <div class="card-body">
+                    <p>Nam quam nunc blandit vel luctus pulvinar hendrerit id lorem maecenas nec odio et ante tincidunt tempus donec vitae sapien ut.</p>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="education-section">
+              <div class="section-header">
+                <h2><i id="icone" class="bi bi-mortarboard"></i> Parcours academique</h2>
+                <p class="section-subtitle"></p>
+              </div>
+
+              <div class="education">
+                <div class="timeline-track"></div>
+
+                <div class="education-item" data-aos="slide-up" data-aos-delay="300">
+                  <div class="timeline-marker"></div>
+                  <div class="education-content">
+                    <div class="degree-header">
+                      <h3>BREVET DE TECHNICIEN EN DEVELOPPEMENT D'APPLICATION</h3>
+                      <span id="duration" class="year">2023 - 2024</span>
+                    </div>
+                    <h4 class="institution">GROUPE ICK (IPF: INSTITUT IVOIRE PRESTIGE DE BOUAKE)</h4>
+                    <p><a class="link-success fw-bolder"  href="https://groupeick.com/">consulter</a></p>
+                  </div>
+                </div>
+
+                <div class="education-item" data-aos="slide-up" data-aos-delay="400">
+                  <div class="timeline-marker"></div>
+                  <div class="education-content">
+                    <div class="degree-header">
+                      <h3>Baccalauréat</h3>
+                      <span id="duration" class="year">2020 - 2021</span>
+                    </div>
+                    <h4 class="institution">Lycée classique et moderne 1 de bouaké</h4>
+                    <p><a class="link-success fw-bolder" href="https://www.facebook.com/LyceeClassiqueBouake/?locale=fr_FR">Consulter</a></p>
+                  </div>
+                </div>
+
+                <!-- <div class="education-item" data-aos="slide-up" data-aos-delay="500">
+                  <div class="timeline-marker"></div>
+                  <div class="education-content">
+                    <div class="degree-header">
+                      <h3>Certificate in Digital Innovation</h3>
+                      <span class="year">2020</span>
+                    </div>
+                    <h4 class="institution">Ligula Academy</h4>
+                    <p>Etiam sit amet orci eget eros faucibus tincidunt duis leo sed fringilla mauris sit amet nibh donec sodales sagittis magna.</p>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Projets</h2>
+        <p>exemple de projets publiques réalisés </p>
+      </div><!-- End Section Title -->
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+            <style>
+              #ui{
+                color: #4a235a;
+              }
+              #projet{
+                background-color: #4a235a;
+                color: #ffffff;
+              }
+              #projet:active{
+                background-color: #ffffff;
+              }
+              #projets{
+                background-color: #f6eafc;
+                color: #4a235a;
+              }
+              #projets:hover{
+                outline: 1px solid #4a235a;
+              }
+              #projets:active {
+                background-color: #f6eafc;
+                 outline: 1px solid #4a235a;
+                 color: #4a235a;
+                 transition: -1500px;
+              }
+              #arrow{
+                background-color: white;
+                border-radius: 50px;
+                padding: 20px;
+                color: #4a235a;
+              }
+              #arrow:hover{
+                background-color: #4a235a;
+                color: white;
+              }
+            
+            </style>
+          
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+            <li id="projet" data-filter="*" class="filter-active">
+              <i  class="bi bi-grid-3x3"></i> Tout les projets publiques
+            </li>
+            <li id="projets"   data-filter=".filter-ui">
+              UI/UX
+            </li>
+            <li id="projets" data-filter=".filter-development">
+              Development
+            </li>
+            <li id="projets" data-filter=".filter-photography">
+              Photography
+            </li>
+            <!-- <li data-filter=".filter-marketing">
+              Marketing
+            </li> -->
+          </ul>
+
+          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="{% static 'assets/img/portfolio/au.png' %}" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div id="ui" class="entry-meta">UI/UX Design</div>
+                      <h3 class="entry-title">Agence de développement web</h3>
+                      <div class="entry">
+                        <a href="{% static 'assets/img/portfolio/au.png' %}" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Agence de création de solution web; description:">
+                          <i id="arrow" class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="{% static 'portfolio-details.html' %}">
+                          <i id="arrow" class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="{% static 'assets/img/portfolio/chr.png' %}" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div id="ui" class="entry-meta">Development</div>
+                      <h3 class="entry-title"> Platforme Marketing Avec Blog intégré</h3>
+                      <div class="entry">
+                        <a href="{% static 'assets/img/portfolio/chr.png' %}" class="glightbox" data-gallery="portfolio-gallery-development" data-glightbox="title: Platforme marketing du CHR de bouaké; description: ">
+                          <i id="arrow"  class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="{% static 'portfolio-details.html' %}">
+                          <i id="arrow"  class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="{% static 'assets/img/portfolio/po.png' %}" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div id="ui" class="entry-meta">UI/UX design</div>
+                      <h3 class="entry-title">Portfolio Client</h3>
+                      <div class="entry">
+                        <a href="{% static 'assets/img/portfolio/po.png' %}" class="glightbox" data-gallery="portfolio-gallery-photography" data-glightbox="title: Portfolio client; description: ">
+                          <i id="arrow"  class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="{% static 'portfolio-details.html' %}">
+                          <i id="arrow"  class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+           
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="{% static 'assets/img/portfolio/logo.jpg' %}" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div id="ui" class="entry-meta">photography</div>
+                      <h3 class="entry-title"> Mon logo </h3>
+                      <div class="entry">
+                        <a href="{% static 'assets/img/portfolio/logo.jpg' %}" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Logo IRIE; description: ">
+                          <i id="arrow" class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="{% static 'portfolio-details.html' %}">
+                          <i id="arrow" class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+           
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="{% static 'assets/img/portfolio/steph3.jpg' %}" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div id="ui" class="entry-meta">Photography</div>
+                      <h3 class="entry-title">Prise de photo</h3>
+                      <div class="entry">
+                        <a href="{% static 'assets/img/portfolio/steph3.jpg' %}" class="glightbox" data-gallery="portfolio-gallery-photography" data-glightbox="title:  Photo portrait; description: ">
+                          <i  id="arrow"  class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                        <a href="{% static 'portfolio-details.html' %}">
+                          <i  id="arrow"  class="bi bi-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+           
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Témoignages</h2>
+        <p>Quelques témoins de ma performance et mon professionnalisme</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+       
+            <div class="testimonials-container">
+              <div class="swiper testimonials-slider init-swiper" data-aos="fade-up" data-aos-delay="400">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
+                      "delay": 5000
+                    },
+                    "slidesPerView": 1,
+                    "spaceBetween": 30,
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "bullets",
+                      "clickable": true
+                    },
+                    "breakpoints": {
+                      "768": {
+                        "slidesPerView": 2
+                      },
+                      "992": {
+                        "slidesPerView": 3
+                      }
+                    }
+                  }
+                </script>
+                <style>
+                  #item{
+                    border-top: 3px solid #4a235a;
+                  }
+                  #titre{
+                    color: #4a235a;
+                  }
+                  #imgtest{
+                    border: 1px solid #4a235a;
+                    box-shadow: 4px 4px 60px #b82965;
+                  }
+                  .swiper-pagination{
+                    visibility: hidden;
+                  }
+                  .rating{
+                    color: #4a235a;
+                    font-weight: bolder;
+                    font-size: 50px;
+                  }
+                  .ratingg{
+                    background-color: #ebd5f5;
+                    border-radius: 20rem;
+                    padding: 0.5rem;
+                    display: inline;
+                    justify-content: space-between;
+                  }
+                </style>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div id="item" class="testimonial-item">
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <p>
+                       Travailler avec STEPHANE a été un vrai plaisir. Il a su parfaitement comprendre nos besoins et transformer nos idées en un site moderne, rapide et entièrement responsive. Le projet a été livré dans les délais, avec un excellent niveau de qualité. Nous le recommandons les yeux fermés.
+                      </p>
+                      <div class="testimonial-profile">
+                        <img id="imgtest" src="{% static 'assets/img/person/koffi.png' %}" alt="Reviewer" class="img-fluid rounded-circle">
+                        <div>
+                          <h3 id="titre">Koffi Prisca Nelly</h3>
+                          <h4>Gestionnaire de projet ONG</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+
+                  <div class="swiper-slide">
+                    <div id="item" class="testimonial-item">
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <p>
+                       STEPHANE IRIE a conçu pour nous une application web sur mesure qui a totalement fluidifié notre gestion interne. Au-delà de ses compétences techniques, il a été force de proposition et très réactif tout au long du projet. Une collaboration fluide, efficace et humaine.
+                      </p>
+                      <div class="testimonial-profile">
+                        <img id="imgtest" src="{% static 'assets/img/person/koné.png' %}" alt="Reviewer" class="img-fluid rounded-circle">
+                        <div>
+                          <h3 id="titre">Koné Ibrahim Sékou</h3>
+                          <h4>Ingénieur en télécommunications</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+
+                  <div class="swiper-slide">
+                    <div id="item" class="testimonial-item">
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                      </div>
+                      <p>
+                       Nous faisons appel au DEV IRIE régulièrement pour des missions en développement front-end et back-end. Il est fiable, autonome et toujours à la page des dernières pratiques. Un vrai atout pour notre équipe technique.
+                      </p>
+                      <div class="testimonial-profile">
+                        <img id="imgtest" src="{% static 'assets/img/person/yao.png' %}" alt="Reviewer" class="img-fluid rounded-circle">
+                        <div>
+                          <h3 id="titre">Yao Euphrasie Grâce</h3>
+                          <h4>Coiffeuse et entrepreneure</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+
+                  <div class="swiper-slide">
+                    <div id="item" class="testimonial-item">
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      <p>
+                      L'expertise de IRIE en optimisation des performances et en responsive design a transformé notre site. Temps de chargement divisé par deux, meilleure lisibilité mobile, et un SEO boosté. Travail propre, communication claire : c’est exactement ce qu’il nous fallait.
+                      </p>
+                      <div class="testimonial-profile">
+                        <img id="imgtest" src="{% static 'assets/img/person/dembélé.png' %}" alt="Reviewer" class="img-fluid rounded-circle">
+                        <div>
+                          <h3 id="titre" >Dembélé Ismaël Karim</h3>
+                          <h4>Développeur web et consultant digital</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!-- End testimonial item -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-center" data-aos="fade-up">
+            <div class="overall-rating">
+              <div class="rating">4.8</div>
+              <div class="rating-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <p>Basé sur plus de 50 avis.</p>
+              <div class="ratingg">
+                <span>Authentic Dev</span>
+                <span>IVS</span>
+                <span>ADCI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Testimonials Section -->
+
+   
+
+    <!-- Contact Section -->
+    <section id="contacte" class="contact section light-background">
+      <style>
+      #contact{
+        background-color: #4a235a;
+      }
+
+      </style>
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Contact</h2>
+        <p>Mes informations de contact</p>
+      </div><!-- End Section Title -->
+
+      <div  class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div  class="row g-4 g-lg-12">
+          <div  class="col-lg-12 ">
+            <div id="contact"  class="info-box" data-aos="fade-up" data-aos-delay="200">
+              <h3 >Contact Info</h3>
+              <p></p>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                  <h4>Localité : </h4>
+                  <p>Côte d'ivoire</p>
+                  <p>Bouaké</p>
+                </div>
+              </div>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                  <h4>Numéro de téléphone :</h4>
+                  <p>+225 0759444725</p>
+                  <p>+225 0714267083</p>
+                </div>
+              </div>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4> Addresse Email</h4>
+                  <p>vangnybi@gmail.com</p>
+                  <p>steph.oft@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <di class="col-lg-7">
+            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+              <h3>Get In Touch</h3>
+              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
+
+              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+          </di> -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer ">
+<style>
+  #footer{
+    background-color: #4a235a;
+    color: white;
+  }
+  #ic{
+    color: white;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  #ic:hover{
+    border: 2px solid white;
+    border-radius: 1.9rem;
+    padding: 1rem;
+    transition: 0.3s;
+  }
+</style>
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">2025</strong> <span>All Rights Reserved.</span></p>
+      </div>
+      <div class="social d-flex justify-content-center">
+        <!-- <a href=""><i  id="ic"  class="bi bi-twitter-x"></i></a> -->
+        <!-- <a href=""><i  id="ic" class="bi bi-facebook"></i></a> -->
+        <!-- <a href=""><i id="ic"  class="bi bi-instagram"></i></a> -->
+        <a href=""><i id="ic"  class="bi bi-linkedin"></i></a>
+        <a href=""><i id="ic"  class="bi bi-github"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="mailto:vangnybi@gmail.com">IRIE CODE</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/typed.js/typed.umd.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+{% endblock %}
